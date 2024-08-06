@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>메인</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <script src="/js/nav.js"></script>
+
+    <div class="container">
+
+        <!--사진 부분-->
+        <!--style="max-width: 1000px; margin-left: auto; margin-right: auto"-->
+
+        <div class="mx-auto" style="height: 550px; max-width: 400px">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+            <script src="js/main_img.js"></script>
+        </div>
+        <!--리뷰-->
+        <div class="row mt-5">
+            <!-- 첫 번째 리뷰 -->
+            <div class="col-sm-6 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">훌륭한 트레이너들</h5>
+                        <p class="card-text">트레이너들의 전문적인 지도 덕분에 운동 효과가 훨씬 높아졌어요. 모든 트레이너가 친절하고 지식이 풍부해서 만족스러워요.</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <p class="card-text"><small class="text-muted">작성자: 김철수</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 두 번째 리뷰 -->
+            <div class="col-sm-6 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">최신 운동기구</h5>
+                        <p class="card-text">다양한 최신 운동기구가 있어서 운동하는 맛이 나네요. 항상 새로운 운동을 시도할 수 있어서 좋아요.</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="card-text"><small class="text-muted">작성자: 김영희</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 세 번째 리뷰 -->
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">깨끗하고 청결한 환경</h5>
+                        <p class="card-text">헬스장이 항상 깨끗하게 유지되어 있어서 마음에 들어요. 청결한 환경에서 운동할 수 있어서 쾌적해요.</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="card-text"><small class="text-muted">작성자: 김민지</small></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 네 번째 리뷰 -->
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">편리한 위치와 접근성</h5>
+                        <p class="card-text">교통이 편리한 위치에 있어서 접근하기 좋아요. 주차 공간도 충분해서 차를 가져가도 불편함이 없네요.</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                        <p class="card-text"><small class="text-muted">작성자: 김태영</small></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="image-container mt-5" id="promotionImage">
+            <img src="/src/%EC%95%88%EB%82%B45.png" alt="Promotion Image" class="clickable-image">
+            <div class="overlay-a">Click Me</div>
+            <p id="promoText">올해의 마지막도 건강하게 보내자구요! 12월의 크리스마스를 맞이하여 할인 이벤트를 진행합니다. 쿠폰란에 <strong>X-mas</strong>를 입력하세요.</p>
+        </div>
+
+
+
+
+    </div>
+    <div class="container">
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 나주엽, TEL : 010-1234-5678 </span>
+            
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body></html>

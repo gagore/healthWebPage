@@ -1,0 +1,60 @@
+#carouselExampleAutoplaying .carousel-item img2 {
+    max-height: 500px;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+}
+
+.fa-star-half-stroke, .fa-star {
+    color: orange;
+}
+
+.active-menu {
+    font-weight: bold;
+    background-color: darksalmon;
+    border-radius: 10px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item .nav-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+#copyButton {
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.clickable-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.overlay-a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}

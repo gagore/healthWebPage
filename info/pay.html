@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>결제</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <script src="/js/nav.js"></script>
+    <!--여기부터 작성-->
+
+    <div class="container mt-5">
+        <h2>온라인 결제</h2>
+        <form id="paymentForm">
+            <div class="mb-3">
+                <label for="months" class="form-label">개월 수 선택</label>
+                <select class="form-select" id="months">
+                    <option value="1">1개월</option>
+                    <option value="3">3개월</option>
+                    <option value="6">6개월</option>
+                    <option value="12">12개월</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="coupon" class="form-label">쿠폰 코드</label>
+                <input type="text" class="form-control" id="coupon">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">결제 방법</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="cash" value="cash">
+                    <label class="form-check-label" for="cash">현금</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="card" value="card">
+                    <label class="form-check-label" for="card">카드</label>
+                </div>
+            </div>
+            <div class="mb-3" id="cardNumberGroup" style="display:none;">
+                <label for="cardNumber" class="form-label">카드 번호</label>
+                <input type="number" class="form-control" id="cardNumber" required>
+                <label for="cardNumber" class="form-label">cvs</label>
+                <input type="number" class="form-control" id="cvs" required>
+                <label for="cardNumber" class="form-label">유효 기간</label>
+                <input type="number" class="form-control" id="yymm" required>          
+            </div>
+
+            <div class="mb-3" id="accountNumberGroup" style="display:none;">
+                <label for="accountNumber" class="form-label">계좌 번호</label>
+                <div class="alert alert-light" role="alert">
+                    신한 - 10203210-132123-123123
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="totalPrice" class="form-label">총 결제 금액</label>
+                <input type="text" class="form-control" id="totalPrice" readonly>
+            </div>
+            <button type="submit" class="btn btn-primary">결제하기</button>
+        </form>
+
+    </div>
+
+    <script src="/js/pay.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body></html>
